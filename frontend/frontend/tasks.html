@@ -1,0 +1,42 @@
+
+
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>ניהול משימות</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>שלום <span id="user-name"></span></h1>
+    <button id="logout-btn">יציאה</button>
+
+    <div id="task-form">
+        <input id="title" type="text" placeholder="כותרת המשימה">
+        <input id="description" type="text" placeholder="תיאור המשימה">
+        <input id="due_date" type="datetime-local">
+        <button id="add-task-btn">הוסף משימה</button>
+    </div>
+
+    <input id="search" placeholder="חפש משימה...">
+
+    <select id="filter-status">
+        <option value="all">הכל</option>
+        <option value="active">לא הושלמו</option>
+        <option value="completed">הושלמו</option>
+    </select>
+
+    <select id="filter-date">
+        <option value="all">הכל</option>
+        <option value="today">היום</option>
+        <option value="week">השבוע</option>
+        <option value="overdue">פיגור</option>
+    </select>
+
+    <ul id="task-list"></ul>
+</div>
+
+<script src="tasks.js"></script>
+</body>
+</html>

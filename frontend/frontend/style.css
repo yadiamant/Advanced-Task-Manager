@@ -1,0 +1,218 @@
+
+
+/* ===================== Reset בסיסי ===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px 0;
+}
+
+/* ===================== Register/Login (צר) ===================== */
+.auth-container {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    width: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.auth-container h2 {
+    margin-bottom: 10px;
+    color: #2f3640;
+}
+
+.auth-container input, .auth-container button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #dcdde1;
+    font-size: 16px;
+}
+
+.auth-container button {
+    background-color: #0097e6;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.auth-container button:hover {
+    background-color: #005f99;
+}
+
+.auth-container a {
+    text-decoration: none;
+    color: #0097e6;
+    font-size: 14px;
+}
+
+.auth-container a:hover {
+    text-decoration: underline;
+}
+
+/* ===================== Tasks Container (רחב) ===================== */
+.container {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    width: 80%;
+    max-width: 900px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ===================== Headings ===================== */
+h1 {
+    margin-bottom: 20px;
+    color: #2f3640;
+    text-align: center;
+}
+
+/* ===================== Inputs & Select ===================== */
+input, select {
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #dcdde1;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #0097e6;
+    box-shadow: 0 0 5px rgba(0, 151, 230, 0.5);
+}
+
+/* ===================== Buttons ===================== */
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #fff;
+    background-color: #0097e6;
+}
+
+button:hover {
+    background-color: #005f99;
+}
+
+/* Logout button */
+#logout-btn {
+    background-color: #e84118;
+    margin-bottom: 20px;
+}
+
+#logout-btn:hover {
+    background-color: #c23616;
+}
+
+/* ===================== Task Form & Filters ===================== */
+#task-form, #filters {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#task-form input, #filters input, #filters select {
+    flex: 1;
+    min-width: 150px;
+}
+
+#filters {
+    margin-top: 10px;
+}
+
+/* ===================== Task List ===================== */
+#task-list {
+    list-style: none;
+    margin-top: 20px;
+    padding-right: 5px;
+    max-height: 500px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* ===================== Task Item ===================== */
+.task-item {
+    background-color: #f5f6fa;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.task-item:hover {
+    background-color: #dcdde1;
+}
+
+.task-item.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.task-item span {
+    margin: 0 10px;
+}
+
+/* Task buttons inside list */
+.task-item button {
+    background-color: #44bd32;
+    margin-left: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.task-item button:hover {
+    background-color: #4cd137;
+}
+
+/* Checkbox for completed */
+.task-item input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-right: 10px;
+}
+
+/* Responsive text */
+.task-title {
+    font-weight: bold;
+    
+}
+
+.task-desc {
+    color: #2f3640;
+    opacity: 0.8;
+    font-size: 14px;
+    
+   
+}
+
+.task-item.overdue {
+    border-left: 5px solid #e84118;
+    background-color: #ffe6e6;
+}
+
+

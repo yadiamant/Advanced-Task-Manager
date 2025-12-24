@@ -196,7 +196,7 @@ def login():
 
 from datetime import datetime, timedelta
 import sqlite3
-from Email import send_email  # נניח ששמרת את הקוד שלך ב־send_email.py
+from sendEmail import send_email  # נניח ששמרת את הקוד שלך ב־send_email.py
 
 REMINDER_HOURS = 2  # כמה שעות לפני הדדליין לשלוח מייל
 

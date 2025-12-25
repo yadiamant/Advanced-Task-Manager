@@ -76,26 +76,22 @@ python app.py
 
 
 The backend server will run on:
-
 http://127.0.0.1:5000
 
 4. Open the frontend
-
 Open register.html in your browser.
 
 📸 Screenshots
 
 
 🎯 Motivation
-
 This project was built independently as part of my personal growth as a software developer.
 It helped me strengthen my understanding of full-stack development, APIs, databases, and self-learning.
 
 👤 Author
-
 Yair Diamant
 Junior Full-Stack Developer
-🔗 LinkedIn: ((https://github.com/yadiamant/Advanced-Task-Manager))
+🔗 LinkedIn: (https://github.com/yadiamant/Advanced-Task-Manager)
 
 
 

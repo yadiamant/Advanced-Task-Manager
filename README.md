@@ -85,10 +85,12 @@ Open register.html in your browser.
 
 
 🎯 Motivation
+
 This project was built independently as part of my personal growth as a software developer.
 It helped me strengthen my understanding of full-stack development, APIs, databases, and self-learning.
 
 👤 Author
+
 Yair Diamant
 Junior Full-Stack Developer
 🔗 LinkedIn: (https://github.com/yadiamant/Advanced-Task-Manager)

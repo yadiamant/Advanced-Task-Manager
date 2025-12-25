@@ -2,21 +2,101 @@
 
 
 
-פרויקט ניהול משימות מתקדמות בפול-סטאק עם Flask ו־JavaScript.
-כולל:
+A full-stack task management web application built as a self-learning project alongside my studies.
+The system allows users to manage tasks efficiently with deadlines, filters, and email reminders.
 
-ניהול משתמשים (הרשמה והתחברות)
+🚀 Features
 
-על משימות (יצירה, קריאה, עדכון, מחיקה) CRUD
+User registration & authentication
 
-תאריכים: יצירת משימה (created_at) ותאריך יעד (due_date)
+Create, read, update, and delete (CRUD) tasks
 
-סימון משימות כהושלמו
+Task description, due date, and completion status
 
-חיפוש וסינון משימות לפי סטטוס, תאריך או טקסט
+Search and filter tasks (by status, date, and keywords)
 
-שליחת תזכורות במייל עם SendGrid לפני מועד ההשלמה
+Email reminders before task deadlines
 
-ממשק Frontend מודרני עם HTML/CSS/JS
+Clean and responsive UI
 
-🛠 טכנולוגיות: Python (Flask), SQLite, JavaScript, HTML, CSS, SendGrid API
+🛠 Tech Stack
+
+Backend
+
+Python
+
+Flask
+
+RESTful API
+
+SQL (SQLite)
+
+Frontend
+
+HTML
+
+CSS
+
+Vanilla JavaScript
+
+Additional
+
+SendGrid (email notifications)
+
+📂 Project Structure
+project/
+│
+├── database.db
+├── backend/
+│   ├── app.py
+│   └── sendEmail.py
+│   ├── create_db.py
+│
+├── frontend/
+│   ├── tasks.html
+│   ├── login.html
+│   ├── register.html
+│   ├── tasks.js
+│   ├── login.js
+│   ├── register.js
+│   └── style.css
+│
+└── README.md
+
+⚙️ Setup & Run
+1. Clone the repository
+git clone https://github.com/yadiamant/Advanced-Task-Manager.git
+cd your-repo
+
+2. Install backend dependencies
+pip install flask flask-cors flask-jwt-extended sendgrid
+
+3. Run the server
+python app.py
+
+
+The backend server will run on:
+
+http://127.0.0.1:5000
+
+4. Open the frontend
+
+Open register.html in your browser.
+
+📸 Screenshots
+
+
+🎯 Motivation
+
+This project was built independently as part of my personal growth as a software developer.
+It helped me strengthen my understanding of full-stack development, APIs, databases, and self-learning.
+
+👤 Author
+
+Yair Diamant
+Junior Full-Stack Developer
+🔗 LinkedIn: ((https://github.com/yadiamant/Advanced-Task-Manager))
+
+
+
+This project was developed from scratch and expanded step by step as part of a self-learning process beyond academic requirements.
